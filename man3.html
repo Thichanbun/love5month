@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kỷ niệm của tụi mình - Màn 3</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #ffe6ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* ---- HEART ---- */
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heart {
+            width: 260px;
+            height: 260px;
+            background: #cfcfcf;
+            position: relative;
+            transform: rotate(-45deg);
+            border-radius: 20px;
+            box-shadow: 0 0 15px #ff9bb3; /* Thêm shadow để đẹp hơn */
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 260px;
+            height: 260px;
+            background: #cfcfcf;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -130px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 130px;
+            top: 0;
+        }
+
+        .heart-text {
+            position: absolute;
+            width: 280px;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            font-size: 22px;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heart-container">
+        <div class="heart">
+            <div class="heart-text">Ở bên anh thật lâu nhé vợ ơi 💗</div>
+        </div>
+    </div>
+
+</body>
+</html>
