@@ -5,6 +5,7 @@
     <title>Kỷ niệm của tụi mình - Màn 1</title>
 
     <style>
+        /* CSS cho trang đầu tiên */
         body {
             margin: 0;
             padding: 0;
@@ -24,6 +25,19 @@
             margin-bottom: 15px;
         }
 
+        /* CSS MỚI CHO ĐOẠN CHỮ */
+        .message-text {
+            max-width: 320px;
+            text-align: center;
+            font-size: 16px;
+            color: #444;
+            margin: 15px 0 25px 0; /* Khoảng cách trên và dưới */
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffc9d2; /* Màu nền nhẹ */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
         button {
             padding: 12px 24px;
             border: none;
@@ -39,6 +53,10 @@
         button:hover {
             background: #ff3670;
         }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -47,10 +65,13 @@
     <div>
         <img src="meo.png" alt="Ảnh Mèo">
         <img src="couple.png" alt="Ảnh Couple">
+        
+        <p class="message-text">Có những cuộc gặp không ngờ là khởi đầu cho cả một câu chuyện dài. Cảm ơn vì đã ở bên anh thời gian qua. Anh yêu vợ nhiều lắm 💖</p>
 
         <audio id="music" src="music.mp3"></audio>
 
         <button onclick="playMusic()">💖 Bấm để nghe nhạc 💖</button>
+        
         <a href="man2.html">
             <button>➡ NEXT</button>
         </a>
@@ -64,6 +85,3 @@ function playMusic() {
 
 </body>
 </html>
-
-
-
