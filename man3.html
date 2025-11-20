@@ -2,9 +2,10 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Kỷ niệm của tụi mình - Màn 3</title>
+    <title>Kỷ niệm của tụi mình - Màn 1</title>
 
     <style>
+        /* CSS cho trang đầu tiên, đã loại bỏ CSS trượt trang */
         body {
             margin: 0;
             padding: 0;
@@ -14,67 +15,59 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            height: 100vh; /* Đảm bảo nội dung căn giữa màn hình */
         }
 
-        /* ---- HEART ---- */
-        .heart-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .heart {
+        img {
             width: 260px;
-            height: 260px;
-            background: #cfcfcf;
-            position: relative;
-            transform: rotate(-45deg);
             border-radius: 20px;
-            box-shadow: 0 0 15px #ff9bb3; /* Thêm shadow để đẹp hơn */
+            box-shadow: 0 0 15px #ff9bb3;
+            margin-bottom: 15px;
         }
 
-        .heart:before,
-        .heart:after {
-            content: "";
-            width: 260px;
-            height: 260px;
-            background: #cfcfcf;
-            border-radius: 50%;
-            position: absolute;
+        button {
+            padding: 12px 24px;
+            border: none;
+            background: #ff5f8f;
+            color: white;
+            font-size: 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.25s;
         }
 
-        .heart:before {
-            top: -130px;
-            left: 0;
+        button:hover {
+            background: #ff3670;
         }
 
-        .heart:after {
-            left: 130px;
-            top: 0;
-        }
-
-        .heart-text {
-            position: absolute;
-            width: 280px;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            font-size: 22px;
-            font-weight: bold;
-            color: #444;
+        /* Đảm bảo link không bị gạch chân */
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="heart-container">
-        <div class="heart">
-            <div class="heart-text">Ở bên anh thật lâu nhé vợ ơi 💗</div>
-        </div>
+    <div>
+        <img src="meo.png" alt="Ảnh Mèo">
+        <img src="couple.png" alt="Ảnh Couple">
+
+        <audio id="music" src="music.mp3"></audio>
+
+        <button onclick="playMusic()">💖 Bấm để nghe nhạc 💖</button>
+        
+        <a href="man2.html">
+            <button>➡ NEXT</button>
+        </a>
     </div>
+
+<script>
+function playMusic() {
+    document.getElementById("music").play();
+}
+</script>
 
 </body>
 </html>
